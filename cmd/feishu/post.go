@@ -70,7 +70,7 @@ func runPostCmd(_ *cobra.Command, _ []string) {
 }
 
 type PostVars struct {
-	post     string
+	post     *string
 	title    string
 	text     string
 	href     string
