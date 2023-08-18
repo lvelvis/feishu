@@ -3,7 +3,7 @@ package feishu
 import (
 	"log"
 
-	"github.com/CatchZeng/feishu/pkg/feishu"
+	"github.com/lvelvis/feishu/pkg/feishu"
 	"github.com/spf13/cobra"
 )
 

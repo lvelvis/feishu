@@ -1,9 +1,10 @@
 package feishu
 
 import (
+	"fmt"
 	"log"
 
-	"github.com/CatchZeng/feishu/pkg/feishu"
+	"github.com/lvelvis/feishu/pkg/feishu"
 	"github.com/spf13/cobra"
 )
 
@@ -80,11 +81,21 @@ type PostVars struct {
 	width    int
 }
 
+
 var postVars PostVars
 
 func init() {
+
+	postData, err := sendMsg()
+	if err != nil {
+		fmt.Println("postData is error:", err)
+	}
+	postVars := PostVars{
+		post: &postData,
+	}
+
 	rootCmd.AddCommand(postCmd)
-	postCmd.Flags().StringVarP(&postVars.post, "post", "p", "", "post json string. The post parameter is used, other parameters will be invalid.")
+	//postCmd.Flags().StringVarP(&postVars.post, "post", "p", "", "post json string. The post parameter is used, other parameters will be invalid.")
 	postCmd.Flags().StringVarP(&postVars.title, "title", "i", "", "title in zh_cn")
 	postCmd.Flags().StringVarP(&postVars.text, "text", "e", "", "text in zh_cn")
 	postCmd.Flags().StringVarP(&postVars.href, "href", "r", "", "href in zh_cn")

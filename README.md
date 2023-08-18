@@ -1,14 +1,14 @@
 # feishu
 
-![Go](https://github.com/CatchZeng/feishu/workflows/Go/badge.svg)
+![Go](https://github.com/lvelvis/feishu/workflows/Go/badge.svg)
 [![codecov](https://codecov.io/gh/CatchZeng/feishu/branch/master/graph/badge.svg)](https://codecov.io/gh/CatchZeng/feishu)
-[![Go Report Card](https://goreportcard.com/badge/github.com/CatchZeng/feishu)](https://goreportcard.com/report/github.com/CatchZeng/feishu)
-[![Release](https://img.shields.io/github/release/CatchZeng/feishu.svg)](https://github.com/CatchZeng/feishu/releases)
-[![GoDoc](https://godoc.org/github.com/CatchZeng/feishu?status.svg)](https://pkg.go.dev/github.com/CatchZeng/feishu?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/lvelvis/feishu)](https://goreportcard.com/report/github.com/lvelvis/feishu)
+[![Release](https://img.shields.io/github/release/CatchZeng/feishu.svg)](https://github.com/lvelvis/feishu/releases)
+[![GoDoc](https://godoc.org/github.com/lvelvis/feishu?status.svg)](https://pkg.go.dev/github.com/lvelvis/feishu?tab=doc)
 
 > feishu 是飞书机器人的 go 实现。支持 **Docker、Jenkinsfile、命令行模式，module 模式**；支持**加签**安全设置，支持**链式语法**创建消息；支持**文本（text）、富文本（post）、图片（image）、群名片（share_chat）、消息卡片（interactive）** 消息类型。
 
-> 注：使用钉钉（DingTalk）的小伙伴，可以使用[钉钉（DingTalk）版](https://github.com/CatchZeng/dingtalk)。
+> 注：使用钉钉（DingTalk）的小伙伴，可以使用[钉钉（DingTalk）版](https://github.com/lvelvis/dingtalk)。
 
 ## 文档
 
@@ -16,17 +16,17 @@
 
 ## 特性
 
-- [x] 支持[Docker](https://github.com/CatchZeng/feishu#Docker)
+- [x] 支持[Docker](https://github.com/lvelvis/feishu#Docker)
 
-- [x] 支持[Jenkinsfile](https://github.com/CatchZeng/feishu#Jenkinsfile)
+- [x] 支持[Jenkinsfile](https://github.com/lvelvis/feishu#Jenkinsfile)
 
-- [x] 支持[module](https://github.com/CatchZeng/feishu#%E4%BD%9C%E4%B8%BA-module)
+- [x] 支持[module](https://github.com/lvelvis/feishu#%E4%BD%9C%E4%B8%BA-module)
 
-- [x] 支持[命令行模式](https://github.com/CatchZeng/feishu#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7)
+- [x] 支持[命令行模式](https://github.com/lvelvis/feishu#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7)
 
-- [x] 支持[配置文件](https://github.com/CatchZeng/feishu#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+- [x] 支持[配置文件](https://github.com/lvelvis/feishu#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 
-- [x] 支持[环境变量](https://github.com/CatchZeng/feishu#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F)
+- [x] 支持[环境变量](https://github.com/lvelvis/feishu#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F)
 
 - [x] 支持加签
 
@@ -62,16 +62,16 @@ docker pull catchzeng/feishu
 
 ### 二进制安装
 
-到 [releases](https://github.com/CatchZeng/feishu/releases/) 下载相应平台的二进制可执行文件，然后加入到 PATH 环境变量即可。
+到 [releases](https://github.com/lvelvis/feishu/releases/) 下载相应平台的二进制可执行文件，然后加入到 PATH 环境变量即可。
 
 ### go install 安装
 
 ```sh
 # Go 1.16+
-go install github.com/CatchZeng/feishu@v1.3.2
+go install github.com/lvelvis/feishu@v1.3.2
 
 # Go version < 1.16
-go get -u github.com/CatchZeng/feishu@v1.3.2
+go get -u github.com/lvelvis/feishu@v1.3.2
 ```
 
 ## 使用方法
@@ -159,7 +159,7 @@ $ feishu post -t 6cxxxx80-xxxx-49e2-ac86-7f378xxxx960 -s k6usknqxxxxazNxxxx443d 
 ### 作为 module
 
 ```
-go get github.com/CatchZeng/feishu
+go get github.com/lvelvis/feishu
 ```
 
 ```go
@@ -168,7 +168,7 @@ package main
 import (
 	"log"
 
-	"github.com/CatchZeng/feishu/pkg/feishu"
+	"github.com/lvelvis/feishu/pkg/feishu"
 )
 
 func main() {

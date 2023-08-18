@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/CatchZeng/feishu/configs"
-	"github.com/CatchZeng/feishu/pkg/feishu"
+	"github.com/lvelvis/feishu/configs"
+	"github.com/lvelvis/feishu/pkg/feishu"
 	"github.com/spf13/viper"
 
 	"github.com/spf13/cobra"

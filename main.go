@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/CatchZeng/feishu/cmd/feishu"
+	"github.com/lvelvis/feishu/cmd/feishu"
 )
 
 func main() {

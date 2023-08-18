@@ -5,12 +5,15 @@ import (
 	"fmt"
 	"strconv"
 	"time"
-
-	"github.com/CatchZeng/feishu/internal/security"
+	"github.com/lvelvis/feishu/internal/security"
 	"github.com/go-resty/resty/v2"
 )
 
-const feishuAPI = "https://open.feishu.cn/open-apis/bot/v2/hook/"
+//const feishuAPI = "https://open.feishu.cn/open-apis/bot/v2/hook/"
+
+const feishuAPI = "https://open.larksuite.com/open-apis/bot/v2/hook/"
+
+//var feishuAPI = os.Getenv("FEISHU_ENV_API")
 
 // Client feishu client
 type Client struct {

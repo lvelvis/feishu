@@ -1,4 +1,4 @@
-module github.com/CatchZeng/feishu
+module github.com/lvelvis/feishu
 
 go 1.18
 
